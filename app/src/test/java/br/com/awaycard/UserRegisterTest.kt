@@ -1,8 +1,9 @@
-package br.com.jvprogramador.awaycard
+package br.com.awaycard
 
-import org.junit.jupiter.api.Assertions.assertFalse
-import org.junit.jupiter.api.Assertions.assertTrue
-import org.junit.jupiter.api.Test
+import br.com.awaycard.UserRegister
+import org.junit.Assert.assertFalse
+import org.junit.Assert.assertTrue
+import org.junit.Test
 
 class UserRegisterTest {
     private val userRegister by lazy { UserRegister() }

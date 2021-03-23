@@ -1,4 +1,4 @@
-package br.com.jvprogramador.awaycard.data
+package br.com.awaycard.data
 
 class InMemoryUserRegister(private val appDatabase: AppDatabase) {
     suspend fun insert(nickname: String) {
@@ -11,5 +11,9 @@ class InMemoryUserRegister(private val appDatabase: AppDatabase) {
 
     suspend fun get(): String {
         return appDatabase.userRegisterDAO().getAll().first().nickname
+    }
+
+    fun onClose() {
+        appDatabase.close()
     }
 }

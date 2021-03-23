@@ -1,4 +1,4 @@
-package br.com.jvprogramador.awaycard.data
+package br.com.awaycard.data
 
 import androidx.room.ColumnInfo
 import androidx.room.Entity

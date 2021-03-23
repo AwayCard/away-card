@@ -1,4 +1,4 @@
-package br.com.jvprogramador.awaycard
+package br.com.awaycard
 
 class UserRegister {
     fun execute(nickname: String): Boolean {

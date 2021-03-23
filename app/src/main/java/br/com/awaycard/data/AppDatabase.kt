@@ -1,4 +1,4 @@
-package br.com.jvprogramador.awaycard.data
+package br.com.awaycard.data
 
 import androidx.room.Database
 import androidx.room.RoomDatabase

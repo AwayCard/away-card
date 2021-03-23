@@ -9,7 +9,7 @@ android {
     buildToolsVersion "30.0.3"
 
     defaultConfig {
-        applicationId "br.com.jvprogramador.awaycard"
+        applicationId "br.com.awaycard"
         minSdkVersion 21
         targetSdkVersion 30
         versionCode 1
@@ -17,7 +17,6 @@ android {
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
-
     buildTypes {
         release {
             minifyEnabled false
@@ -35,6 +34,11 @@ android {
         exclude 'META-INF/LICENSE.md'
         exclude 'META-INF/LICENSE-notice.md'
     }
+    testOptions {
+        unitTests {
+            includeAndroidResources true
+        }
+    }
 }
 
 dependencies {
@@ -51,13 +55,9 @@ dependencies {
     kapt 'androidx.room:room-compiler:2.2.6'
 
     // junit
-    testImplementation 'org.junit.jupiter:junit-jupiter:5.7.0'
+    testImplementation 'junit:junit:4.13.2'
     // android - database
     testImplementation 'androidx.room:room-testing:2.2.6'
-
-    // android instrumentation
-    androidTestImplementation 'org.junit.jupiter:junit-jupiter:5.7.0'
-    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
-    kaptAndroidTest 'androidx.room:room-compiler:2.2.6'
+    // robolectric
+    testImplementation 'org.robolectric:robolectric:4.4'
 }
