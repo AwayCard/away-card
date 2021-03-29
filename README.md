@@ -7,20 +7,18 @@
 
 <!-- PROJECT LOGO -->
 <br />
-<p align="center">
-  <a href="https://github.com/othneildrew/Best-README-Template">
-    <img src="images/logo.svg" alt="Logo">
-  </a>
+<div align="center">
+    <img src="images/logo.svg" alt="AwayCard logo" />
+    <h3>for Android</h3>
+</div>
 
-  <h3 align="center">for Android</h3>
-
-  <p align="center">
+<div align="center">
     A app for management your financial cards.
     <br />
     <a href="https://github.com/jvprogramador/away-card/pulls">Fix Bug</a>
     ·
     <a href="https://github.com/jvprogramador/away-card/issues">Request Feature</a>
-  </p>
+</div>
 
 <!-- TABLE OF CONTENTS -->
 <details open="open">
