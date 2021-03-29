@@ -1,53 +1,26 @@
-<!--
-*** Thanks for checking out the Best-README-Template. If you have a suggestion
-*** that would make this better, please fork the repo and create a pull request
-*** or simply open an issue with the tag "enhancement".
-*** Thanks again! Now go create something AMAZING! :D
--->
-
-
-
-<!-- PROJECT SHIELDS -->
-<!--
-*** I'm using markdown "reference style" links for readability.
-*** Reference links are enclosed in brackets [ ] instead of parentheses ( ).
-*** See the bottom of this document for the declaration of the reference variables
-*** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
-*** https://www.markdownguide.org/basic-syntax/#reference-style-links
--->
+[![!Discord][discord-shield]][discord-url]
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
-
-
 
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
   <a href="https://github.com/othneildrew/Best-README-Template">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+    <img src="images/logo.svg" alt="Logo" width="80" height="80">
   </a>
 
-  <h3 align="center">Best-README-Template</h3>
+  <h3 align="center">AwayCard for Android</h3>
 
   <p align="center">
-    An awesome README template to jumpstart your projects!
+    A app for management your financial cards.
     <br />
-    <a href="https://github.com/othneildrew/Best-README-Template"><strong>Explore the docs »</strong></a>
-    <br />
-    <br />
-    <a href="https://github.com/othneildrew/Best-README-Template">View Demo</a>
+    <a href="https://github.com/jvprogramador/away-card/pulls">Fix Bug</a>
     ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Report Bug</a>
-    ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Request Feature</a>
+    <a href="https://github.com/jvprogramador/away-card/issues">Request Feature</a>
   </p>
-</p>
-
-
 
 <!-- TABLE OF CONTENTS -->
 <details open="open">
@@ -173,9 +146,9 @@ Distributed under the MIT License. See `LICENSE` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@your_twitter](https://twitter.com/your_username) - email@example.com
+L. Fernando Araujo - [@oiferrugem](https://twitter.com/oiferrugem) - faraujo.lfernando@gmail.com
 
-Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
+Project Link: [https://github.com/jvprogramador/away-card](https://github.com/jvprogramador/away-card)
 
 
 
@@ -193,22 +166,18 @@ Project Link: [https://github.com/your_username/repo_name](https://github.com/yo
 * [JVectorMap](http://jvectormap.com)
 * [Font Awesome](https://fontawesome.com)
 
-
-
-
-
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/othneildrew/Best-README-Template.svg?style=for-the-badge
-[contributors-url]: https://github.com/othneildrew/Best-README-Template/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/othneildrew/Best-README-Template.svg?style=for-the-badge
-[forks-url]: https://github.com/othneildrew/Best-README-Template/network/members
-[stars-shield]: https://img.shields.io/github/stars/othneildrew/Best-README-Template.svg?style=for-the-badge
-[stars-url]: https://github.com/othneildrew/Best-README-Template/stargazers
-[issues-shield]: https://img.shields.io/github/issues/othneildrew/Best-README-Template.svg?style=for-the-badge
-[issues-url]: https://github.com/othneildrew/Best-README-Template/issues
-[license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=for-the-badge
-[license-url]: https://github.com/othneildrew/Best-README-Template/blob/master/LICENSE.txt
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/othneildrew
+[discord-shield]: https://img.shields.io/discord/825774825812787292?color=738AD7&label=AWAYCARD%20DISCORD&style=for-the-badge
+[discord-url]: https://discord.gg/SYK5s6Bvp6
+[contributors-shield]: https://img.shields.io/github/contributors/jvprogramador/away-card?style=for-the-badge
+[contributors-url]: https://github.com/jvprogramador/away-card/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/jvprogramador/away-card?style=for-the-badge
+[forks-url]: https://github.com/jvprogramador/away-card/network/members
+[stars-shield]: https://img.shields.io/github/stars/jvprogramador/away-card?style=for-the-badge
+[stars-url]: https://github.com/jvprogramador/away-card/stargazers
+[issues-shield]: https://img.shields.io/github/issues/jvprogramador/away-card?style=for-the-badge
+[issues-url]: https://github.com/jvprogramador/away-card/issues
+[license-shield]: https://img.shields.io/github/license/jvprogramador/away-card?style=for-the-badge
+[license-url]: https://github.com/jvprogramador/away-card/blob/main/LICENSE.txt
 [product-screenshot]: images/screenshot.png
