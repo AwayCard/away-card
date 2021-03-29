@@ -9,10 +9,10 @@
 <br />
 <p align="center">
   <a href="https://github.com/othneildrew/Best-README-Template">
-    <img src="images/logo.svg" alt="Logo" width="80" height="80">
+    <img src="images/logo.svg" alt="Logo">
   </a>
 
-  <h3 align="center">AwayCard for Android</h3>
+  <h3 align="center">for Android</h3>
 
   <p align="center">
     A app for management your financial cards.
