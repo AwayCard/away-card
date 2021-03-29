@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">AwayCard</string>
+
+    <string name="away_card_logo">AwayCard</string>
 </resources>

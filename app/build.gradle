@@ -42,22 +42,17 @@ android {
 }
 
 dependencies {
+    implementation project(':onboarding')
+
     // kotlin
     implementation "org.jetbrains.kotlin:kotlin-stdlib:1.4.31"
 
     // android
     implementation 'androidx.core:core-ktx:1.3.2'
+
     implementation 'androidx.appcompat:appcompat:1.2.0'
-
-    // android - database
-    implementation 'androidx.room:room-runtime:2.2.6'
-    implementation 'androidx.room:room-ktx:2.2.6'
-    kapt 'androidx.room:room-compiler:2.2.6'
-
-    // junit
-    testImplementation 'junit:junit:4.13.2'
-    // android - database
-    testImplementation 'androidx.room:room-testing:2.2.6'
-    // robolectric
-    testImplementation 'org.robolectric:robolectric:4.4'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'androidx.navigation:navigation-fragment-ktx:2.3.4'
+    implementation 'androidx.navigation:navigation-ui-ktx:2.3.4'
 }

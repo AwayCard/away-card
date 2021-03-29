@@ -2,6 +2,6 @@
     <!-- Base application theme. -->
     <style name="Theme.AwayCard" parent="Theme.AppCompat.DayNight.NoActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/purple_200</item>
+        <item name="colorPrimary">@color/medium_slate_blue</item>
     </style>
 </resources>

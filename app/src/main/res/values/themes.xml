@@ -2,6 +2,14 @@
     <!-- Base application theme. -->
     <style name="Theme.AwayCard" parent="Theme.AppCompat.DayNight.NoActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimary">@color/medium_slate_blue</item>
+    </style>
+
+    <style name="AwayCard.SplashTheme" parent="Theme.AwayCard">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:statusBarColor">@color/medium_slate_blue</item>
+        <item name="android:windowBackground">@drawable/background_main_splash</item>
+        <item name="android:navigationBarColor">@color/medium_slate_blue</item>
     </style>
 </resources>
