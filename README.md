@@ -83,7 +83,7 @@ Contributions are what make the open source community such an amazing place to b
 2. Create your WIP Branch (`git checkout -b feat/amazing-feature`)
 3. Commit your Changes (`git commit -m 'Add some amazing'`)
 4. Push to the Branch (`git push origin feat/amazing-feature`)
-5. Open a Pull Request
+5. Open a Pull Request to 'main' branch
 
 <!-- LICENSE -->
 ## License
