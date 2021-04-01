@@ -1,6 +1,6 @@
 package br.com.awaycard.onboarding.data
 
-class InMemoryUserRegister(private val appDatabase: AppDatabase) {
+class InMemoryUser(private val appDatabase: AppDatabase) {
     suspend fun insert(nickname: String) {
         if (nickname.isNotEmpty()) {
             return appDatabase.userRegisterDAO().insert(User(nickname = nickname))

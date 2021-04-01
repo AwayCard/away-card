@@ -1,12 +1,12 @@
 package br.com.awaycard.onboarding
 
-import br.com.awaycard.onboarding.viewmodel.UserRegister
+import br.com.awaycard.onboarding.viewmodel.UserRegisterViewModel
 import org.junit.Assert.assertFalse
 import org.junit.Assert.assertTrue
 import org.junit.Test
 
-class UserRegisterTest {
-    private val userRegister by lazy { UserRegister() }
+class UserRegisterViewModelTest {
+    private val userRegister by lazy { UserRegisterViewModel() }
 
     @Test fun registerUser() {
         assertTrue(userRegister.execute("jvprogramador"))

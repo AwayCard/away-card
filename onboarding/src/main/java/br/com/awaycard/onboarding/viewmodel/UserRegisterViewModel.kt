@@ -1,6 +1,8 @@
 package br.com.awaycard.onboarding.viewmodel
 
-class UserRegister {
+import androidx.lifecycle.ViewModel
+
+class UserRegisterViewModel : ViewModel() {
     fun execute(nickname: String): Boolean {
         return isNicknameEmpty(nickname) && hasNicknameValid(nickname)
     }
