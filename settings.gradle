@@ -1,2 +1,4 @@
+include ':platinum'
+include ':onboarding'
 include ':app'
 rootProject.name = "AwayCard"
