@@ -12,7 +12,7 @@ class IntroFragment : Fragment() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        changeStatusBarColor(R.color.medium_slate_blue)
+        changeStatusBarColor(R.color.cultured)
         changeNavigationBarColor(R.color.medium_slate_blue)
     }
 
