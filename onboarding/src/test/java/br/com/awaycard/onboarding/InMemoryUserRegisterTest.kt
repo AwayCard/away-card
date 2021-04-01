@@ -28,8 +28,7 @@ class InMemoryUserRegisterTest {
         ).build()
     }
 
-    @Test
-    fun registerSuccessUser() = runBlocking {
+    @Test fun registerSuccessUser() = runBlocking {
         inMemoryRegister.insert("jvprogramador")
         assertEquals("jvprogramador", inMemoryRegister.get())
     }

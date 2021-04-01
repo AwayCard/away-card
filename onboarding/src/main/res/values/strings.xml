@@ -1,5 +1,4 @@
 <resources>
-    <string name="intro">Bem vindo ao</string>
     <string name="intro_title">Rápido, seguro e\ndinâmico.</string>
     <string name="intro_subtitle">Com o AwayCard, você não passa mico na\nhora de pagar o entregador com o seu cartão\nnovo, e nem relembrando mais a senha.</string>
     <string name="intro_awaycard">AwayCard</string>

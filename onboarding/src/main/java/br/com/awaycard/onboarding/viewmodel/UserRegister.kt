@@ -1,4 +1,4 @@
-package br.com.awaycard.onboarding
+package br.com.awaycard.onboarding.viewmodel
 
 class UserRegister {
     fun execute(nickname: String): Boolean {

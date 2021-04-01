@@ -3,17 +3,12 @@
     <style name="AwayCardLogoDefinition" parent="Widget.AppCompat.TextView">
         <item name="fontFamily">@font/righteous_regular</item>
         <item name="android:textColor">@color/medium_slate_blue</item>
-        <item name="android:textSize">30sp</item>
+        <item name="android:textSize">50sp</item>
     </style>
 
     <style name="AwayCardTextDefinition" parent="Widget.AppCompat.TextView">
         <item name="fontFamily">@font/montserrat_regular</item>
         <item name="android:textColor">@color/jet</item>
-    </style>
-
-    <style name="AwayCardTextDefinition.IntroTextDefinition">
-        <item name="android:textStyle">bold</item>
-        <item name="android:textSize">36sp</item>
     </style>
 
     <style name="AwayCardTextDefinition.IntroTitleDefinition">

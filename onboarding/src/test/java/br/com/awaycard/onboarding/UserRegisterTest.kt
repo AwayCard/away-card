@@ -1,5 +1,6 @@
 package br.com.awaycard.onboarding
 
+import br.com.awaycard.onboarding.viewmodel.UserRegister
 import org.junit.Assert.assertFalse
 import org.junit.Assert.assertTrue
 import org.junit.Test

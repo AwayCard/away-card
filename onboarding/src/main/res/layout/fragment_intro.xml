@@ -8,25 +8,15 @@
     android:layout_gravity="center">
 
     <androidx.appcompat.widget.AppCompatTextView
-        android:id="@+id/logo"
-        style="@style/AwayCardTextDefinition.IntroTextDefinition"
+        android:id="@+id/introLogo"
+        style="@style/AwayCardLogoDefinition"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/intro"
-        app:layout_constraintBottom_toTopOf="@id/simpleIntroModal"
+        android:text="@string/intro_awaycard"
+        app:layout_constraintBottom_toTopOf="@+id/simpleIntroModal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <androidx.appcompat.widget.AppCompatTextView
-        android:id="@+id/introLogo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        style="@style/AwayCardLogoDefinition"
-        android:text="@string/intro_awaycard"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/logo" />
 
     <androidx.coordinatorlayout.widget.CoordinatorLayout
         android:id="@+id/simpleIntroModal"
