@@ -3,7 +3,7 @@
     <style name="AwayCardLogoDefinition" parent="Widget.AppCompat.TextView">
         <item name="fontFamily">@font/righteous_regular</item>
         <item name="android:textColor">@color/medium_slate_blue</item>
-        <item name="android:textSize">50sp</item>
+        <item name="android:textSize">48sp</item>
     </style>
 
     <style name="AwayCardTextDefinition" parent="Widget.AppCompat.TextView">
@@ -14,25 +14,48 @@
     <style name="AwayCardTextDefinition.IntroTitleDefinition">
         <item name="android:textStyle">bold</item>
         <item name="android:textSize">26sp</item>
-        <item name="android:textColor">@color/cultured</item>
+        <item name="android:textColor">@color/jet</item>
         <item name="android:textAlignment">textStart</item>
+        <item name="lineHeight">36dp</item>
+
     </style>
 
     <style name="AwayCardTextDefinition.IntroSubTitleDefinition">
         <item name="android:textStyle">normal</item>
         <item name="android:textSize">14sp</item>
         <item name="android:lineSpacingExtra">5sp</item>
-        <item name="android:textColor">@color/cultured</item>
+        <item name="android:textColor">@color/jet</item>
         <item name="android:textAlignment">textStart</item>
     </style>
 
-    <style name="ButtonOutlineDefinition" parent="Widget.AppCompat.Button">
-        <item name="android:background">@drawable/button_outline</item>
-        <item name="android:textColor">@color/cultured</item>
+    <style name="ButtonDefinition" parent="Widget.AppCompat.Button">
         <item name="android:clickable">true</item>
         <item name="android:focusable">true</item>
         <item name="android:fontFamily">@font/montserrat_regular</item>
         <item name="textAllCaps">false</item>
         <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="ButtonDefinition.ButtonOutline">
+        <item name="android:background">@drawable/button_outline</item>
+        <item name="android:textColor">@color/cultured</item>
+    </style>
+
+    <style name="ButtonDefinition.ButtonColored">
+        <item name="android:background">@drawable/button_colored</item>
+        <item name="android:textColor">@color/cultured</item>
+    </style>
+
+    <style name="SwitchButtonDefinition" parent="Widget.AppCompat.CompoundButton.Switch">
+        <item name="thumbTint">@color/switch_thumb_color</item>
+        <item name="trackTint">@color/switch_track_color</item>
+        <item name="colorControlHighlight">@color/jet</item>
+        <item name="colorControlActivated">@color/jet</item>
+    </style>
+
+    <style name="AwayCardTextDefinition.EditTextDefinition">
+        <item name="android:background">@null</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:textCursorDrawable">@drawable/cursor_color</item>
     </style>
 </resources>

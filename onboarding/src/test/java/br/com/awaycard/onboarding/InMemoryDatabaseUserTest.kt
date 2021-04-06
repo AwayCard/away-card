@@ -14,9 +14,9 @@ import org.robolectric.annotation.Config
 
 @RunWith(RobolectricTestRunner::class)
 @Config(sdk = [Build.VERSION_CODES.O_MR1])
-class InMemoryUserTest {
+class InMemoryDatabaseUserTest {
     private val inMemoryRegister by lazy {
-        br.com.awaycard.onboarding.data.InMemoryUser(
+        br.com.awaycard.onboarding.data.InMemoryDatabaseUser(
             dbApp
         )
     }

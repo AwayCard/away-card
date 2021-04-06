@@ -1,33 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
+<androidx.appcompat.widget.LinearLayoutCompat
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@color/cultured"
-    android:layout_gravity="center">
+    android:orientation="vertical"
+    android:gravity="center"
+    android:fitsSystemWindows="true">
 
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/introLogo"
         style="@style/AwayCardLogoDefinition"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/intro_awaycard"
-        app:layout_constraintBottom_toTopOf="@+id/simpleIntroModal"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <androidx.coordinatorlayout.widget.CoordinatorLayout
-        android:id="@+id/simpleIntroModal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
+        android:gravity="center"
+        android:text="@string/intro_awaycard"
+        android:layout_weight="1" />
 
-        <include layout="@layout/intro_modal_bottom_sheet" />
+    <br.com.awaycard.platinum.ScreenIndicator
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:text="@string/lets_begin" />
 
-    </androidx.coordinatorlayout.widget.CoordinatorLayout>
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.appcompat.widget.LinearLayoutCompat>

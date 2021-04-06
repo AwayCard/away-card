@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/cultured"
+    android:fitsSystemWindows="true">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        android:layout_weight="1">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/AwayCardTextDefinition.IntroTitleDefinition"
+            android:layout_marginStart="21dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="26dp"
+            android:text="@string/intro_title"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/AwayCardTextDefinition.IntroSubTitleDefinition"
+            android:layout_marginStart="21dp"
+            android:text="@string/intro_subtitle"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <br.com.awaycard.platinum.ScreenIndicator
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:text="@string/skip" />
+
+</androidx.appcompat.widget.LinearLayoutCompat>

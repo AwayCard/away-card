@@ -1,0 +1,20 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.AwayCard" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/jet</item>
+        <item name="colorPrimaryDark">@color/jet_85_opacity</item>
+        <item name="colorPrimaryVariant">@color/jet_50_opacity</item>
+        <item name="colorSecondary">@color/cultured</item>
+        <item name="colorSecondaryVariant">@color/cultured_50_opacity</item>
+
+        <item name="bottomSheetDialogTheme">@style/BottomSheetRoundedDefinition</item>
+    </style>
+
+    <style name="SplashTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowBackground">@drawable/background_main_splash</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+</resources>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="BottomSheetRoundedDefinition" parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/BottomSheetRoundedBackground</item>
+    </style>
+
+    <style name="BottomSheetRoundedBackground" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@drawable/square_rounded_cultured_background</item>
+    </style>
+</resources>
