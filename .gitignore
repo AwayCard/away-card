@@ -278,6 +278,7 @@ obj/
 
 # IntelliJ IDEA
 /out/
+/build/
 
 # User-specific configurations
 .idea/caches/

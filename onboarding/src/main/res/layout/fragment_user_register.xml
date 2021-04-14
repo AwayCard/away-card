@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/cultured"
+    android:fitsSystemWindows="true">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        android:layout_weight="1">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/AwayCardTextDefinition.IntroTitleDefinition"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="41dp"
+            android:text="@string/how_name" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/userRegisterInput"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            style="@style/AwayCardTextDefinition.EditTextDefinition"
+            android:gravity="start|center"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginTop="30dp"
+            android:hint="@string/nickname_hint">
+            <requestFocus />
+        </androidx.appcompat.widget.AppCompatEditText>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <br.com.awaycard.platinum.ScreenIndicator
+        android:id="@+id/userRegisterIndicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:text="@string/next" />
+
+</androidx.appcompat.widget.LinearLayoutCompat>

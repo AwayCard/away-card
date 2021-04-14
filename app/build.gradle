@@ -2,6 +2,7 @@ plugins {
     id 'com.android.application'
     id 'kotlin-android'
     id 'kotlin-kapt'
+    id 'dagger.hilt.android.plugin'
 }
 
 android {
@@ -23,12 +24,13 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
     kotlinOptions {
-        jvmTarget = '1.8'
+        jvmTarget = JavaVersion.VERSION_1_8
     }
     packagingOptions {
         exclude 'META-INF/LICENSE.md'
@@ -40,18 +42,28 @@ android {
         }
     }
 }
-
+kapt {
+    correctErrorTypes true
+}
+hilt {
+    enableTransformForLocalTests true
+}
 dependencies {
+    implementation project(':nav-machine')
     implementation project(':onboarding')
+    implementation project(':platinum')
+
+    implementation 'androidx.navigation:navigation-ui-ktx:2.3.4'
+
+    implementation 'com.google.dagger:hilt-android:2.33-beta'
+    kapt 'com.google.dagger:hilt-compiler:2.33-beta'
 
     // kotlin
-    implementation "org.jetbrains.kotlin:kotlin-stdlib:1.4.31"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
 
     // android
     implementation 'androidx.core:core-ktx:1.3.2'
 
     implementation 'androidx.appcompat:appcompat:1.2.0'
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
-    implementation 'androidx.navigation:navigation-fragment-ktx:2.3.4'
-    implementation 'androidx.navigation:navigation-ui-ktx:2.3.4'
 }

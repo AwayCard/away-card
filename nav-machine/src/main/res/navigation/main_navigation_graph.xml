@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_navigation_graph"
+    app:startDestination="@id/onboarding_navigation_graph">
+
+    <include app:graph="@navigation/onboarding_navigation_graph" />
+
+    <action
+        android:id="@+id/action_global_onboarding"
+        app:destination="@id/onboarding_navigation_graph" />
+</navigation>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/onboarding_navigation_graph"
+    app:startDestination="@id/introFragment">
+    <fragment
+        android:id="@+id/introFragment"
+        android:name="br.com.awaycard.onboarding.IntroFragment"
+        tools:layout="@layout/fragment_intro"
+        android:label="IntroFragment">
+        <action
+            android:id="@+id/action_introFragment_to_introTeaserFragment"
+            app:destination="@id/introTeaserFragment"
+            app:enterAnim="@anim/bottom_to_top_enter"
+            app:exitAnim="@anim/bottom_to_top_exit"
+            app:launchSingleTop="true"
+            app:popEnterAnim="@anim/top_to_bottom_enter"
+            app:popExitAnim="@anim/top_to_bottom_exit" />
+    </fragment>
+    <fragment
+        android:id="@+id/userRegisterBottomSheet"
+        android:name="br.com.awaycard.onboarding.UserRegisterFragment"
+        android:label="UserRegisterBottomSheet"
+        tools:layout="@layout/fragment_user_register" >
+        <action
+            android:id="@+id/action_userRegisterBottomSheet_to_cardRegisterFragment"
+            app:destination="@id/cardRegisterFragment"
+            app:enterAnim="@anim/bottom_to_top_enter"
+            app:exitAnim="@anim/bottom_to_top_exit"
+            app:launchSingleTop="true"
+            app:popEnterAnim="@anim/top_to_bottom_enter"
+            app:popExitAnim="@anim/top_to_bottom_exit" />
+    </fragment>
+    <fragment
+        android:id="@+id/introTeaserFragment"
+        android:name="br.com.awaycard.onboarding.IntroTeaserFragment"
+        android:label="IntroTeaserFragment"
+        tools:layout="@layout/fragment_intro_teaser" >
+        <action
+            android:id="@+id/action_introTeaserFragment_to_userRegisterBottomSheet"
+            app:destination="@id/userRegisterBottomSheet"
+            app:enterAnim="@anim/bottom_to_top_enter"
+            app:exitAnim="@anim/bottom_to_top_exit"
+            app:launchSingleTop="true"
+            app:popEnterAnim="@anim/top_to_bottom_enter"
+            app:popExitAnim="@anim/top_to_bottom_exit" />
+    </fragment>
+    <fragment
+        android:id="@+id/cardRegisterFragment"
+        android:name="br.com.awaycard.onboarding.CardRegisterFragment"
+        android:label="fragment_card_register"
+        tools:layout="@layout/fragment_card_register" />
+</navigation>
