@@ -7,7 +7,9 @@ import androidx.navigation.findNavController
 import br.com.awaycard.navigation.NavMachine
 import br.com.awaycard.navigation.NavMachineGraph
 import br.com.awaycard.navigation.NavMachineV1
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class MainActivity : AppCompatActivity(), NavMachine {
     private val navMachineV1: NavMachineV1 by lazy { NavMachineV1(this) }
 

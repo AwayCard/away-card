@@ -13,15 +13,12 @@ class ScreenIndicator(
     init {
         inflate(context, R.layout.screen_indicator, this)
 
-        context.obtainStyledAttributes(
+        val indicator = context.obtainStyledAttributes(
             attrs,
             R.styleable.ScreenIndicator
-        ).apply {
-            try {
-                findViewById<AppCompatTextView>(R.id.nextIndicator).text = getString(R.styleable.ScreenIndicator_text)
-            } finally {
-                recycle()
-            }
-        }
+        )
+
+        findViewById<AppCompatTextView>(R.id.nextIndicator).text = indicator.getString(R.styleable.ScreenIndicator_text)
+        indicator.recycle()
     }
 }

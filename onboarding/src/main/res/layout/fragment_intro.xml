@@ -19,6 +19,7 @@
         android:layout_weight="1" />
 
     <br.com.awaycard.platinum.ScreenIndicator
+        android:id="@+id/introLetsGo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:text="@string/lets_begin" />

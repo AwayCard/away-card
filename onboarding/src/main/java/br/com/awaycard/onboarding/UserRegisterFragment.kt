@@ -5,17 +5,19 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.appcompat.widget.AppCompatEditText
-import androidx.appcompat.widget.LinearLayoutCompat
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.lifecycleScope
 import androidx.navigation.fragment.findNavController
 import br.com.awaycard.onboarding.viewmodel.UserRegisterViewModel
+import br.com.awaycard.platinum.ScreenIndicator
 import br.com.awaycard.platinum.enableFullscreenMode
+import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 
+@AndroidEntryPoint
 class UserRegisterFragment : Fragment() {
     private val viewmodel by viewModels<UserRegisterViewModel>()
 
@@ -28,11 +30,11 @@ class UserRegisterFragment : Fragment() {
 
         enableFullscreenMode()
 
-        requireActivity().findViewById<LinearLayoutCompat>(R.id.userRegisterIndicator).setOnClickListener {
+        requireView().findViewById<ScreenIndicator>(R.id.userRegisterIndicator).setOnClickListener {
+            val input = requireActivity().findViewById<AppCompatEditText>(R.id.userRegisterInput).text.toString()
+
             lifecycleScope.launch {
-                withContext(Dispatchers.IO) {
-                    viewmodel.execute(requireActivity().findViewById<AppCompatEditText>(R.id.userRegisterInput).text.toString())
-                }
+                viewmodel.execute(input)
                 findNavController().navigate(UserRegisterFragmentDirections.actionUserRegisterBottomSheetToCardRegisterFragment())
             }
         }

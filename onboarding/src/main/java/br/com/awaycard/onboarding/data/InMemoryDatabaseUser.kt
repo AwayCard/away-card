@@ -1,6 +1,8 @@
 package br.com.awaycard.onboarding.data
 
-class InMemoryDatabaseUser(private val appDatabase: AppDatabase) : InLocalService {
+import javax.inject.Inject
+
+class InMemoryDatabaseUser @Inject constructor(private val appDatabase: AppDatabase) : InLocalService {
     override suspend fun insert(nickname: String) {
         if (nickname.isNotEmpty()) {
             return appDatabase.userRegisterDAO().insert(User(nickname = nickname))

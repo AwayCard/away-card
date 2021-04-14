@@ -5,14 +5,15 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.appcompat.widget.LinearLayoutCompat
 import androidx.navigation.fragment.findNavController
+import br.com.awaycard.platinum.ScreenIndicator
 import br.com.awaycard.platinum.enableFullscreenMode
 
 class IntroTeaserFragment : Fragment() {
 
     override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
+        inflater: LayoutInflater,
+        container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         return inflater.inflate(R.layout.fragment_intro_teaser, container, false)
@@ -23,7 +24,7 @@ class IntroTeaserFragment : Fragment() {
 
         enableFullscreenMode()
 
-        requireActivity().findViewById<LinearLayoutCompat>(R.id.teaserSkip).setOnClickListener {
+        requireView().findViewById<ScreenIndicator>(R.id.teaserSkip).setOnClickListener {
             findNavController().navigate(IntroTeaserFragmentDirections.actionIntroTeaserFragmentToUserRegisterBottomSheet())
         }
     }
